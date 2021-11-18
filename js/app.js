@@ -104,19 +104,7 @@ document.addEventListener("DOMContentLoaded", function(event){
   });
 }
 
-//le paso como parametro el transactionId de la transaccion que quiero eliminar
-  function deleteTransacObj(transactionId) {
-      //Obtengo las transacciones de mi base de datos.
-      let transactionObjArr = JSON.parse(localStorage.getItem("transferFormData"));
-      //Busco la posicion de la transaccion que quiero eliminar
-      let transactionIndexInArray = transactionObjArr.findIndex(element => element.transactionId === transactionId);
-      //Elimino el elemento de esa posicion
-      transactionObjArr.splice(transactionIndexInArray, 1);
-       //Convierto mi array a json nuevamente
-    let myTransactionArrayJSON = JSON.stringify(transactionIndexInArray);
-    //Guardo mi array de transaccion en formato json en el local storage
-    localStorage.setItem("transferFormData", myTransactionArrayJSON);
-  }
+
 
 //Guardar formulario en localstorage
 function saveTransactionObj(transactionObj) {
@@ -129,7 +117,19 @@ function saveTransactionObj(transactionObj) {
 }
 
 
-
+//le paso como parametro el transactionId de la transaccion que quiero eliminar
+function deleteTransacObj(transactionId) {
+    //Obtengo las transacciones de mi base de datos.
+    let transactionObjArr = JSON.parse(localStorage.getItem("transferFormData"));
+    //Busco la posicion de la transaccion que quiero eliminar
+    let transactionIndexInArray = transactionObjArr.findIndex(element => element.transactionId === transactionId);
+    //Elimino el elemento de esa posicion
+    transactionObjArr.splice(transactionIndexInArray, 1);
+     //Convierto mi array a json nuevamente
+  let myTransactionInArrayJSON = JSON.stringify(transactionIndexInArray);
+  //Guardo mi array de transaccion en formato json en el local storage
+  localStorage.setItem("transferFormData", myTransactionInArrayJSON);
+}
 
 //Mostrar y ocultar menu:
 let switchDisplay = document.getElementById('switchDisplay');
