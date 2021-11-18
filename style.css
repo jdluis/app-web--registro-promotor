@@ -187,6 +187,16 @@ td {
     background: rgb(163, 105, 105);
 }
 
+.buttonDeleteCustom {
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    margin: 2px 0;
+    background: white;
+    color: black;
+    cursor: pointer;
+}
+
 
 /*MEDIA QUERYS TABLE*/
 /* short devices (laptops/desktops, 502px and down) */
