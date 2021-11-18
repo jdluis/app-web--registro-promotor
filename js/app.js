@@ -99,37 +99,34 @@ document.addEventListener("DOMContentLoaded", function(event){
       if (confirmacion === true) {
           console.log("Se ha eliminado la fila con el ID: " + transactionRow.getAttribute("data-transaction-id"));
           transactionRow.remove();
-          deleteTransacObj(transactionId);
+          deleteTransactionObj(transactionId);
       }
   });
 }
 
 
 
-//Guardar formulario en localstorage
-function saveTransactionObj(transactionObj) {
-    let myTransactionArray = JSON.parse(localStorage.getItem("transferFormData")) || [];
-    myTransactionArray.push(transactionObj);
-    //Convierto mi array a json
-    let myTransactionArrayJSON = JSON.stringify(myTransactionArray);
-    //guardo mi array de transaccion en formato json en el local storage
-    localStorage.setItem("transferFormData", myTransactionArrayJSON);
-}
-
-
-//le paso como parametro el transactionId de la transaccion que quiero eliminar
-function deleteTransacObj(transactionId) {
-    //Obtengo las transacciones de mi base de datos.
-    let transactionObjArr = JSON.parse(localStorage.getItem("transferFormData"));
-    //Busco la posicion de la transaccion que quiero eliminar
-    let transactionIndexInArray = transactionObjArr.findIndex(element => element.transactionId === transactionId);
-    //Elimino el elemento de esa posicion
+function deleteTransactionObj(transactionId) {
+    let transactionObjArr = JSON.parse(localStorage.getItem("transactionData"));
+    //Busco el indice / la poscicion de la transacccion que quiero eliminar
+    let transactionIndexInArray = transactionObjArr.findIndex(
+      (element) => element.transactionId == transactionId
+    );
+    //Elimino el elemento de esa poscicion
     transactionObjArr.splice(transactionIndexInArray, 1);
-     //Convierto mi array a json nuevamente
-  let myTransactionInArrayJSON = JSON.stringify(transactionIndexInArray);
-  //Guardo mi array de transaccion en formato json en el local storage
-  localStorage.setItem("transferFormData", myTransactionInArrayJSON);
-}
+    let transactionArrayJSON = JSON.stringify(transactionObjArr);
+    localStorage.setItem("transactionData", transactionArrayJSON);
+  }
+  
+  function saveTransactionObj(transactionObj) {
+    let myTransactionArray =
+      JSON.parse(localStorage.getItem("transactionData")) || [];
+    myTransactionArray.push(transactionObj);
+    //Convierto  mi array de transaccion a json
+    let transactionArrayJSON = JSON.stringify(myTransactionArray);
+    //Guardo mi array de transaccion en formato JSON en el local storage
+    localStorage.setItem("transactionData", transactionArrayJSON);
+  }
 
 //Mostrar y ocultar menu:
 let switchDisplay = document.getElementById('switchDisplay');
