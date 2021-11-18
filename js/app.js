@@ -72,15 +72,7 @@ document.addEventListener("DOMContentLoaded", function(event){
         insertRowTransitionTable(transactionObjArr[i])
      }
 })
-/*//2º forma de hacerlo con forEach que es como la hace Damian, dejar por si mas adelante la usa
-document.addEventListener("DOMContentLoaded", function(event){
-    let transactionObjArr = JSON.parse(localStorage.getItem("transferFormData"));
-    transactionObjArr.forEach( 
-        function(arrayElement) {
-            insertRowTransitionTable(arrayElement)
-        }
-    );
-*/
+
 
  //funcion que nos devuelve un ID unico
  function getNewTransactionId() {
