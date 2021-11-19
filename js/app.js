@@ -63,11 +63,19 @@ function insertRowTransitionTable(transactionObj) {
 };
 
 
-
+function saveTransactionObj(transactionObj) {
+  let myTransactionArray =
+    JSON.parse(localStorage.getItem("transactionData")) || [];
+  myTransactionArray.push(transactionObj);
+  //Convierto  mi array de transaccion a json
+  let transactionArrayJSON = JSON.stringify(myTransactionArray);
+  //Guardo mi array de transaccion en formato JSON en el local storage
+  localStorage.setItem("transactionData", transactionArrayJSON);
+}
 
 //Cargar items del localStorage aal formulario, tambien podria hacerlo con forEach.
 document.addEventListener("DOMContentLoaded", function(event){
-    let transactionObjArr = JSON.parse(localStorage.getItem("transferFormData"));
+    let transactionObjArr = JSON.parse(localStorage.getItem("transactionData"));
     for (i=0;i<transactionObjArr.length;i++) { 
         insertRowTransitionTable(transactionObjArr[i])
      }
@@ -110,15 +118,7 @@ function deleteTransactionObj(transactionId) {
     localStorage.setItem("transactionData", transactionArrayJSON);
   }
   
-  function saveTransactionObj(transactionObj) {
-    let myTransactionArray =
-      JSON.parse(localStorage.getItem("transactionData")) || [];
-    myTransactionArray.push(transactionObj);
-    //Convierto  mi array de transaccion a json
-    let transactionArrayJSON = JSON.stringify(myTransactionArray);
-    //Guardo mi array de transaccion en formato JSON en el local storage
-    localStorage.setItem("transactionData", transactionArrayJSON);
-  }
+
 
 //Mostrar y ocultar menu:
 let switchDisplay = document.getElementById('switchDisplay');
