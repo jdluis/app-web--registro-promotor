@@ -1,6 +1,3 @@
-import _ from "lodash" 
-//@ts-check
-
 //Agregar datos de formularios a tabla
 const form = document.getElementById("taskForm");
 
