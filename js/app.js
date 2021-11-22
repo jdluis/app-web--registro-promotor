@@ -1,3 +1,7 @@
+//Upload All modules, import for fix program:
+@import_from "lodash"; //importa los autocompletados de la base de lodash
+// @ts-check //Nos chequea la aplicacion si esta seguro de ello, como con los uppercase.
+
 
 //Agregar datos de formularios a tabla
 const form = document.getElementById("taskForm");
