@@ -1,0 +1,23 @@
+{
+  "name": "app-web--registro-promotor",
+  "version": "1.0.0",
+  "description": "Aplicación para registrar todas las entradas de los festivales y sus comisiones como promotor. // App for register all my fullpasses of the festivals and commissions like a promoter.",
+  "main": "index.js",
+  "scripts": {
+    "build-css":"tailwindcss build src/styles.css -o public/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdluis/app-web--registro-promotor.git"
+  },
+  "keywords": [],
+  "author": "jdluis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jdluis/app-web--registro-promotor/issues"
+  },
+  "homepage": "https://github.com/jdluis/app-web--registro-promotor#readme",
+  "dependencies": {
+    "tailwindcss": "^2.2.19"
+  }
+}
