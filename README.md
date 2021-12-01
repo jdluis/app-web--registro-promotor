@@ -28,3 +28,7 @@ Implementaciones a la Version Betha: <br>
  ------------------------Metodos: Añadir y eliminar promotores<br>
  ------------------------Modificar clientes de promotores (cambios visibles)<br>
  
+ ////////////////////////////////////////////////////////
+ 
+ ![Screenshot](img/page-preview.png)
+ 
