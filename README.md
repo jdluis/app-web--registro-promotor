@@ -3,10 +3,13 @@ Aplicación para registrar todas las entradas de los festivales y sus comisiones
 //
 App for register all my fullpasses of the festivals and commissions like a promoter.
 
+<div style="text-align: center;"
 *********************************
-Technologies used so far: HTML|CSS|JS.
+Technologies used so far: HTML|CSS|JS. // Technologies used so far: HTML|CSS|JS.
 *********************************
-Spanish/English will be soon.
+</div>
+
+ ///////////////////////////// {{ ES }}  /////////////////////////////
 
 Contenido Version Alpha:
  - Formulario que pida: Nombre, Email, Numero de telefono, seleccion del evento, y un texarea con notas adicionales.
@@ -18,7 +21,7 @@ Contenido Version Alpha:
  - Informacion del promotor.
  - Footer con Copyright.
 
- //////////////////////////////////////////////////////////
+
 
 Implementaciones a la Version Betha: <br> 
  -Posibilidad de añadir otros promotores al programa no solo el mio. <br>
@@ -28,7 +31,32 @@ Implementaciones a la Version Betha: <br>
  ------------------------Metodos: Añadir y eliminar promotores<br>
  ------------------------Modificar clientes de promotores (cambios visibles)<br>
  
+  ///////////////////////////// {{ EN }}  /////////////////////////////
+
+
+Alpha version content:
+ - Request form: Name, Email, Telephone number, selection of the event, and a text with additional notes.
+ - A table where the data entered in the form is reflected.
+ - Elimination of one of the rows of the table if required.
+ - Save table information and run once the program is started again.
+ - CSS styles
+ - Basic SEO.
+ - Promoter information.
+ - Footer with Copyright.
+ 
+ 
+Implementations to Version Betha: <br>
+ -Possibility of adding other promoters to the program, not just mine. <br>
+ -Download tables to pdf and or excel.<br>
+ -Possibility of sending tables by mail in pdf or excel format. <br>
+ -App admin: <br>
+ ------------------------Methods: Add and remove promoters<br>
+ ------------------------Modify clients of promoters (visible changes)<br>
+ 
  ////////////////////////////////////////////////////////
+
+
+
  
  ![Screenshot](img/page-preview.png)
  
