@@ -3,13 +3,13 @@ Aplicación para registrar todas las entradas de los festivales y sus comisiones
 //
 App for register all my fullpasses of the festivals and commissions like a promoter.
 
-<div style="text-align: center;"
-*********************************
-Technologies used so far: HTML|CSS|JS. // Technologies used so far: HTML|CSS|JS.
-*********************************
-</div>
 
- ///////////////////////////// {{ ES }}  /////////////////////////////
+*********************************
+Technologies used so far: HTML|CSS|JS.     // Technologies used so far: HTML|CSS|JS.
+*********************************
+
+
+                                                        {{ ES }}  
 
 Contenido Version Alpha:
  - Formulario que pida: Nombre, Email, Numero de telefono, seleccion del evento, y un texarea con notas adicionales.
@@ -31,7 +31,7 @@ Implementaciones a la Version Betha: <br>
  ------------------------Metodos: Añadir y eliminar promotores<br>
  ------------------------Modificar clientes de promotores (cambios visibles)<br>
  
-  ///////////////////////////// {{ EN }}  /////////////////////////////
+                                                        {{ EN }}  
 
 
 Alpha version content:
@@ -53,7 +53,7 @@ Implementations to Version Betha: <br>
  ------------------------Methods: Add and remove promoters<br>
  ------------------------Modify clients of promoters (visible changes)<br>
  
- ////////////////////////////////////////////////////////
+ ****************************************
 
 
 
